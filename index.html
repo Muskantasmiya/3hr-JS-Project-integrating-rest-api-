@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <h1 id="heading">Bus Booking</h1>
+    <div class="filteritem">
+      <label for="filter">Filter</label>
+      <select name="bus" id="filter">
+        <option value="all">All</option>
+        <option value="bus1">Bus 1</option>
+        <option value="bus2">Bus 2</option>
+        <option value="bus3">Bus 3</option>
+      </select>
+    </div>
+
+    <div id="app">
+      <form id="form">
+        <label for="name" class="formitem">Name</label>
+        <input type="text" name="username" id="name" class="input" />
+        <label for="email" class="formitem">Email</label>
+        <input type="email" name="email" id="email" class="input" />
+        <label for="phone" class="formitem">Phone No</label>
+        <input type="tel" name="phone" id="phone" class="input" />
+        <label for="busid" class="formitem">Bus Number</label>
+        <select name="bus" id="busid">
+          <option value="bus1">Bus 1</option>
+          <option value="bus2">Bus 2</option>
+          <option value="bus3">Bus 3</option>
+        </select>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      <ul id="userList"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>
